@@ -131,3 +131,7 @@ print(response["llm"]["replies"][0].content)
 ## License
 
 `serperdev-haystack` is distributed under the terms of the [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.
+
+## Search endpoint configuration
+
+Support any Serper.dev-compatible endpoint (like litescrape.com, serpbase.dev, serpensapi.org, and others). Set `SERPERDEV_BASE_URL` to the provider base URL (without `/search`) and `SERPERDEV_API_KEY` to its API key. The component appends `/search` and retains its default endpoint when the setting is unset.
